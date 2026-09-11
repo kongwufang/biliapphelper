@@ -55,12 +55,14 @@
 
 > 当前 release 使用 debug 签名（见 `app/build.gradle.kts` 中的 `signingConfig = signingConfigs.getByName("debug")`），方便直接安装体验；如需正式发布请替换为自己的 keystore。
 
-## 关于设备指纹（重要）
+## 关于设备指纹
 
-哔哩哔哩会对登录设备做指纹校验，这是本项目唯一需要**你自己准备**的部分：
+哔哩哔哩会对登录设备做指纹校验。本项目的设备指纹已**完整内置在工程里**，克隆后可直接构建运行，无需任何额外准备：
 
-- `DeviceFingerprint.kt` 中的 `buvid` / `device_id` / `local_id` / `login_session_id` 等持久标识，目前是作者设备的真实值。**请替换成你自己设备的**，否则会和作者的设备共用同一条登录设备记录。
-- `device_fp.json`（`device_meta` / `dt` 硬件指纹，约 40KB）**不随仓库分发**，需要从你自己的设备抓包提取后放到 `app/src/main/assets/device_fp.json`。文件缺失时程序仍可正常启动，只是部分登录场景可能会多触发一次验证。
+- **持久标识**（`buvid` / `device_id` / `local_id` / `login_session_id`）硬编码在 `DeviceFingerprint.kt`；
+- **硬件指纹**（`device_meta` / `dt`）放在 `app/src/main/assets/device_fp.json`，已随仓库一起分发。
+
+> 以上指纹取自作者本人的设备，仅供个人自用参考。若多人使用或换到其它设备，建议替换为你自己的值，否则各个安装会共用同一条登录设备记录。
 
 ## 说明
 

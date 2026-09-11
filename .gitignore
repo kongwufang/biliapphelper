@@ -10,9 +10,6 @@ local.properties
 *.apk
 *.aab
 
-# 设备指纹（隐私，构建时从项目外部注入）
-app/src/main/assets/device_fp.json
-
 # IDE / 系统
 .idea/
 *.iml
