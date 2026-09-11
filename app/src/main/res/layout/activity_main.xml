@@ -23,7 +23,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="3dp"
-            android:text="B站 客户端接口调试工具" />
+            android:text="哔哩哔哩 App 轻量化辅助工具" />
 
         <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
