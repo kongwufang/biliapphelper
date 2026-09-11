@@ -1,0 +1,20 @@
+# Gradle / 构建产物
+.gradle/
+build/
+app/build/
+
+# 本地配置（含本机 SDK 路径）
+local.properties
+
+# 打包产物
+*.apk
+*.aab
+
+# 设备指纹（隐私，构建时从项目外部注入）
+app/src/main/assets/device_fp.json
+
+# IDE / 系统
+.idea/
+*.iml
+.DS_Store
+Thumbs.db

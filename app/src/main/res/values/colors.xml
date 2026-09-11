@@ -1,0 +1,24 @@
+<resources>
+    <color name="brand_pink">#FB7299</color>
+    <color name="brand_pink_dark">#E45C82</color>
+    <color name="brand_pink_light">#FFF0F4</color>
+
+    <color name="bg_page">#F5F6FA</color>
+    <color name="bg_card">#FFFFFF</color>
+    <color name="bg_input">#F2F4F8</color>
+    <color name="divider">#EDEFF3</color>
+
+    <color name="text_primary">#111318</color>
+    <color name="text_secondary">#7C828D</color>
+    <color name="text_hint">#A9AEB8</color>
+
+    <color name="ok_green">#18A058</color>
+    <color name="err_red">#E5484D</color>
+
+    <color name="log_bg">#1B1F27</color>
+    <color name="ic_launcher_background">#FFFFFF</color>
+    <color name="log_text">#C9D1D9</color>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>
